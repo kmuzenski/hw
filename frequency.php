@@ -11,10 +11,10 @@ I took the other side of the street on the way back. Of course I'd seen the squi
 saw that the gesture was being delivered almost with reverence. Then he bowed against the concrete, and the windless summer day presented him flat against the earth. Hot and still. If a squirrel had lain like that a few feet back -- in the road -- it would've been mistaken for roadkill.
 I was quickening my pace away from the sidewalk scene. I knew I'd seen the squirrel before, but a torrent of tears came to me at the same time. I'd seen many squirrels before the bumper of my car and it was this one -- only this one alone -- who'd made it.";
 
-$words = str_word_count($text, 1);
-$frequency = array_count_values($words);
+$words = explode (" ", $text);
+$counts = array_count_values($words);
+$maxs= array_keys($counts, max($counts));
 
-arsort($frequency);
-print_r($frequency);
+print_r($maxs);
 
 ?>
