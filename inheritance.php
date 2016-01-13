@@ -1,42 +1,42 @@
 <?php
-  class magazine {
+  class Associate {
 //properties
-	var $fontstyle;
-	var $fontcolor;
-	var $fontsize;
-	var $pagenumber;
-	var $author;
-	var $textwrap;
-	var $img;
-	var $edit;
-	var $color;
-	var $credits;
+	var $name;
+	var $memberId;
+	var $ssn;
+	var $position;
+	var $payrate;
+	var $skill;
+	var $exp;
+	var $avail;
+	var $partTime;
+	var $fullTime;
 //functions	
 	function __construct() {;}
-	function __spellcheck() {;}
-	function __source() {;}
-	function __grammercheck() {;}
-	function __insert() {;}
-	function __textwrap() {;}
+	function __firstname() {;}
+	function __memberID() {;}
+	function __rank() {;}
+	function __Task() {;}
+	function __clockIn() {;}
 }
 
 
- class editorial  extends magazine {
+ class manager  extends Associate{
 	function __construct() {;}
-	function __title()  {;}
-	function __jumbophoto() {;}
-	function __textalign() {;}
+	function __payroll()  {;}
+	function __schedule() {;}
+	function __hiring() {;}
 	}
 
- class mainstory extends editorial  {
+ class assistantM extends manager  {
 	function __construct() {;}
-	function __sortpage() {;}
-	function __subheader() {;}
-	function __specialtxt() {;}
-	function __created () {;}
-	function __updated () {;}
-	function __citesource () {;}
-	function __format () {;}
+	function __office() {;}
+	function __truck() {;}
+	function __merch() {;}
+	function __hourly () {;}
+	function __inventory () {;}
+	function __plano() {;}
+	function __marketing() {;}
 	} 
 
 
