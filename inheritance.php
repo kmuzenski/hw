@@ -2,7 +2,7 @@
   class Associate {
 //properties
 	var $name;
-	var $memberId;
+	var $member;
 	var $ssn;
 	var $position;
 	var $payrate;
@@ -21,22 +21,22 @@
 }
 
 
- class manager  extends Associate{
+ class assistantM  extends Associate{
 	function __construct() {;}
-	function __payroll()  {;}
-	function __schedule() {;}
-	function __hiring() {;}
+	function __mrktng()  {;}
+	function __merch() {;}
+	function __inventory() {;}
 	}
 
- class assistantM extends manager  {
+ class manager  extends Associate  {
 	function __construct() {;}
 	function __office() {;}
 	function __truck() {;}
-	function __merch() {;}
-	function __hourly () {;}
-	function __inventory () {;}
+	function __hiring() {;}
+	function __hourlySales () {;}
+	function __schedule() {;}
 	function __plano() {;}
-	function __marketing() {;}
+	function __maint() {;}
 	} 
 
 
