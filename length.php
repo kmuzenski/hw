@@ -1,6 +1,12 @@
 <?php
-$InputString = "I love Kitties";
+$string =str_split( "I love kitties");
 
-echo strlen($InputString);
+
+$i=0;
+
+foreach ($string as $str) {
+$i++;
+}
+print_r ($i);
 
 ?> 
