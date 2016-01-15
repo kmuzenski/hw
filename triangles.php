@@ -28,37 +28,51 @@ print_r("\n");
 
 
 function BackwardsT () {
-$col = 0;
-
+$col = 3;
+$starcount=0;
 for ($i=0; $i <= 3; $i++) {
 
+//print spaces
 for ($c =0; $c <= $col; $c++) {
-print_r("*");
+print_r(" ");
+
 }
-$col = $col+1;
+//prints stars
+for ($s=0; $s <=$starcount; $s++)
+{
+print_r("*");
+
+}
+//adds stars
+$starcount = $starcount +1;
+//retracts spaces
+$col = $col-1;
+
 print_r("\n");
 
 }
 }
 
+
 function UpsideDownT () {
-$col = 0;
+$col = 3;
 
 for($i=0; $i <=3; $i++) {
 
-for ($c = 4; $c <= $col; $c= $c-1) {
+for ($c = 0; $c <= $col; $c++) {
 print_r("*");
 }
 $col =$col-1;
 print_r("\n");
 
+}
+}
+}
 
-
-}
-}
-}
 $mySC = new ShapeMaker(4); // calls the function
 $mySC->Triangle();
+print_r("\n");
 $mySC->BackwardsT();
+print_r("\n");
 $mySC->UpsideDownT();
 ?>
