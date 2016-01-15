@@ -5,7 +5,7 @@
 	var $member;
 	var $ssn;
 	var $position;
-	var $payrate;
+	var $task;
 	var $skill;
 	var $exp;
 	var $avail;
@@ -16,7 +16,7 @@
 	function __firstname() {;}
 	function __memberID() {;}
 	function __rank() {;}
-	function __Task() {;}
+	function __payrate() {;}
 	function __clockIn() {;}
 }
 
