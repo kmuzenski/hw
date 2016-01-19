@@ -1,12 +1,12 @@
 <?php
 
 function explosion ($delim,$sentence) {
-	$space = " ";
+	$space = "";
 	$returnarray = array();
 
 	for ($i=0; $i < strlen($sentence); $i++) {
 
-	if($sentence[$i] == " ") {
+	if($sentence[$i] == "") {
 array_push($returnarray,$space);
 $space = " ";
 }
